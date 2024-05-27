@@ -1,0 +1,1 @@
+export const gridItems: string[] = ["Swap", "Pools", "Bridge"]
