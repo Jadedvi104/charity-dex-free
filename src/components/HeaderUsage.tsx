@@ -1,7 +1,6 @@
 import * as React from "react";
 import AppBar from "@mui/material/AppBar";
 import Toolbar from "@mui/material/Toolbar";
-import Button from "@mui/material/Button";
 import HeaderTabs from "./headerComponents/HeaderTabs";
 import HeaderLogo from "./headerComponents/HeaderLogo";
 import HeaderButton from "./headerComponents/HeaderButton";
