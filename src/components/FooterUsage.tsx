@@ -2,7 +2,6 @@ import React from 'react';
 import Container from '@mui/material/Container';
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
-import Typography from '@mui/material/Typography';
 import Link from '@mui/material/Link';
 import MediumIcon from '@mui/icons-material/Article';
 import TwitterIcon from '@mui/icons-material/Twitter';
@@ -11,7 +10,7 @@ import YouTubeIcon from '@mui/icons-material/YouTube';
 
 const Footer = () => {
   return (
-    <Box sx={{ backgroundColor: '#000000', padding: 4, marginTop: 4 }}>
+    <Box sx={{ backgroundColor: '#000000', padding: 4 }}>
       <Container maxWidth="lg">
         <Grid container spacing={4}>
           {/* Social Media Icons */}
