@@ -5,6 +5,7 @@ import Tab from "@mui/material/Tab";
 import { Box } from "@mui/material";
 import { tabLabels } from "@/Data/tabsItems";
 import React, { useState } from "react";
+import Link from "next/link";
 
 const tabStyles = {
   color: "white", // Default color
@@ -33,8 +34,13 @@ const HeaderTabs = () => {
           sx: { backgroundColor: "white" }, // Indicator color
         }}
       >
-        {tabLabels.map((label) => (
-          <Tab key={label} label={label} sx={tabStyles} />
+        {tabLabels.map((tab) => (
+          <Link key={tab.href} href={tab.href} passHref>
+            <Tab 
+              label={tab.label}
+              sx={tabStyles} 
+            />
+          </Link>
         ))}
       </Tabs>
     </Box>
