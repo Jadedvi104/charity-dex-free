@@ -5,7 +5,7 @@ import Tab from "@mui/material/Tab";
 import { Box } from "@mui/material";
 import { tabLabels } from "@/Data/tabsItems";
 import React, { useState } from "react";
-import Link from "next/link";
+import { useRouter } from "next/navigation";
 
 const tabStyles = {
   color: "white", // Default color
@@ -19,9 +19,12 @@ const tabStyles = {
 };
 
 const HeaderTabs = () => {
+  const router = useRouter();
   const [selectedTab, setSelectedTab] = useState<number>(0);
+
   const handleChange = (event: React.SyntheticEvent, newValue: number) => {
     setSelectedTab(newValue);
+    router.push(tabLabels[newValue].href);
   };
 
   return (
@@ -35,12 +38,11 @@ const HeaderTabs = () => {
         }}
       >
         {tabLabels.map((tab) => (
-          <Link key={tab.href} href={tab.href} passHref>
             <Tab 
+              key={tab.href}
               label={tab.label}
               sx={tabStyles} 
             />
-          </Link>
         ))}
       </Tabs>
     </Box>

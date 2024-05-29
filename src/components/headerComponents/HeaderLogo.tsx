@@ -1,6 +1,7 @@
 import * as React from "react";
 import Typography from "@mui/material/Typography";
 import { Avatar, Box } from "@mui/material";
+import Link from "next/link";
 
 const HeaderLogo = () => {
   return (
@@ -10,13 +11,16 @@ const HeaderLogo = () => {
         src="/logo.svg" // Replace with the URL of your logo
         sx={{ marginRight: 2 }}
       />
-      <Typography
-        variant="h6"
-        component="div"
-        sx={{ fontWeight: "bold", fontSize: "1.5rem" }}
-      >
-        ZOMEDEX
-      </Typography>
+      <Link href={'/'}>
+        <Typography
+          variant="h6"
+          component="div"
+          sx={{ fontWeight: "bold", fontSize: "1.5rem" }}
+        >
+          ZOMEDEX
+        </Typography>
+      </Link>
+      
     </Box>
   );
 };
