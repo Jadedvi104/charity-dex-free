@@ -62,7 +62,6 @@ yarn dev
 <img src="https://img.shields.io/badge/license-MIT-blue.svg" height="35" width="150"/>
 
 <h2>Contact</h2>
-<p>Email: jirayu@jirayudev.site</p>
 <a href="https://www.linkedin.com/in/jirayu-nakplien-6a392b144/"><img src="https://i.imgur.com/ygH92vs.png" height="35" width="150"/>
 <br>
 <a href="https://medium.com/@jajirayu"/><img src="https://img.shields.io/badge/Medium-12100E?style=for-the-badge&logo=medium&logoColor=white" height="35" width="150" /> 
