@@ -22,7 +22,7 @@ Where crypto trading is truly decentralized and completely free.
 
 ```bash
 # Clone the repository
-git clone [https://github.com/jadedvi104/repo.git](https://github.com/Jadedvi104/charity-dex-free.git)
+git clone https://github.com/Jadedvi104/charity-dex-free.git
 
 # Navigate to the project directory
 cd charity-dex-free
